@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
+@import url("./blog.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    background: #f4f4f4;
+    position: relative;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+}
