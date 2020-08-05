@@ -1,0 +1,76 @@
+main h1 {
+    margin: 1rem 0;
+}
+
+.blog-pic {
+    width: 75%;
+}
+
+.author-img {
+    width: 300px;
+}
+
+.author-info p {
+    text-align: start;
+}
+
+.instruction-card h2 {
+    justify-self: center;
+    align-self: center;
+}
+
+.direction-card ol li,
+.instruction-card ul li {
+    text-align: start;
+    margin: 0.5rem auto;
+}
+
+@media (min-width: 600px) {
+    .container {
+        padding: 1rem 2rem !important;
+    }
+
+    .food-container {
+        display: grid;
+        grid-template-areas: "img img" "instruction direction";
+        grid-gap: 1rem;
+        margin: 1rem auto;
+    }
+
+    figure {
+        grid-area: img;
+        align-self: center;
+        justify-self: center;
+    }
+
+    figure .blog-pic {
+        width: 50%;
+    }
+
+    .instruction-card {
+        grid-area: instruction;
+    }
+
+    .direction-card {
+        grid-area: direction;
+    }
+
+    .instruction-card ul li,
+    .direction-card ol li {
+        padding: 0 1rem;
+    }
+    .author-container {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .author-img {
+        width: 500px;
+    }
+
+    .social-media i {
+        padding: 0 0.5rem;
+    }
+}

@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #9b4dca;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav li a {
+    margin: 0 0.2rem;
+    padding: 0.5rem;
+}

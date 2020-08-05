@@ -1,0 +1,35 @@
+.card {
+    width: 90%;
+}
+
+.card h2 {
+    margin: 1rem 0;
+}
+
+.card p {
+    text-align: left;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem 0.5rem;
+    }
+
+    .card {
+        box-shadow: 0 4px 12px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (min-width: 1000px) {
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

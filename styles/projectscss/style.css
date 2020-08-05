@@ -20,10 +20,9 @@ body {
 }
 
 .container {
-  align: center;
-  width: 100%;
-  margin: 20px 0;
-  margin-right: 20px;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
 }
 
 nav ul li {
@@ -37,7 +36,7 @@ a {
 }
 
 img {
-    width: 200px;
+    width: 100%;
 }
 
 @media (min-width: 600px) {
