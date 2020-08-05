@@ -212,3 +212,42 @@ p {
   }
     /* display: none !important; */
 }
+
+
+/* Education container */
+
+.education_logo {
+  width: 170px;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+.edu_container {
+  width: 320px;
+  margin: 20px 0;
+  margin-right: 20px;
+  background-color: #fdfdfd;
+  border-left: solid 4px #90bfff;
+}
+
+.edu_header {
+  display: flex;
+  border-bottom: solid 1px #dedddd;
+}
+
+.edu_title {
+  margin-top: 2em;
+}
+
+.edu_title > p {
+  margin: 0;
+  color: #333;
+}
+
+.edu_info {
+  height: 100%;
+  margin: 0 2em;
+  margin-top: 1em;
+  font-size: 0.7em;
+
+
