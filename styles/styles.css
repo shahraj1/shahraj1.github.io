@@ -1,0 +1,214 @@
+/* INCLUDE FONTS */
+
+@font-face {
+  font-family: MuseoSans900;
+  src: url("../assets/fonts/MuseoSans_900.otf");
+}
+
+@font-face {
+  font-family: Nunito;
+  src: url("../assets/fonts/Nunito-Light.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("../assets/fonts/Lato-Light.ttf");
+}
+
+/* TAG STYLES */
+
+body {
+  margin: 0 auto !important;
+  font-family: Lato, sans-serif !important;
+  color: #777 !important;
+  overflow-x: hidden !important;
+  min-width: 400px;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+h1 {
+  font-family: MuseoSans900, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 34px !important;
+  letter-spacing: 2px;
+  color: #222;
+}
+
+h3 {
+  font-family: Nunito !important;
+  font-size: 23px !important;
+  color: #555 !important;
+}
+
+h4 {
+  font-family: MuseoSans900, sans-serif !important;
+  font-weight: 900 !important;
+  color: #363535;
+  margin-top: 60px !important;
+  margin-bottom: 10px !important;
+}
+
+p {
+  font-family: "Nunito", sans-serif !important;
+  font-weight: 300 !important;
+  line-height: 25px !important;
+  font-size: 13.2px !important;
+  letter-spacing: 0.7px;
+  max-width: 570px;
+}
+
+/* CLASS STYLES */
+
+.section {
+  position: relative;
+  box-shadow: black 2px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0 !important;
+}
+
+.profile_section {
+  /* width: 370px; */
+  display: flex;
+}
+
+.profile_icon {
+  height: 25px;
+  padding-right: 1em;
+  color: coral;
+}
+
+.profile_icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.header {
+  height: 97vh !important;
+}
+
+.exp_grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.exp_container {
+  width: 320px;
+  margin: 20px 0;
+  margin-right: 20px;
+  background-color: #fdfdfd;
+  border-left: solid 4px #90bfff;
+}
+
+.exp_header {
+  display: flex;
+  border-bottom: solid 1px #dedddd;
+}
+
+.exp_title {
+  margin-top: 1em;
+}
+
+.exp_title > p {
+  margin: 0;
+  color: #333;
+}
+
+.exp_info {
+  height: 100%;
+  margin: 0 2em;
+  margin-top: 1em;
+  font-size: 0.7em;
+}
+
+.company_logo {
+  width: 140px;
+  margin-right: 10px;
+  padding: 20px;
+}
+
+.tech_containe {
+  border: solid 1px cornflowerblue;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.proj_container {
+  border: solid 1px cornflowerblue;
+  height: 400px;
+  margin: 20px 0;
+}
+
+.company_logo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.email {
+  margin: 5px 0;
+  color: #222;
+}
+
+/* ID STYLES */
+
+#illustration {
+  top: 0;
+  margin-left: 15vh;
+  position: relative;
+}
+
+#section_banner {
+  height: 4px;
+  background-color: #90bfff;
+}
+
+#section_divider {
+  background-color: #f8f9f9;
+  height: 30px;
+}
+
+#mini_divider {
+  height: 4px;
+  width: 100px;
+  background-color: #90bfff;
+  margin: 15px 0;
+}
+
+#title_divider {
+  height: 1px;
+  width: 100%;
+  background-color: #dedddd;
+  margin-bottom: 20px;
+}
+
+#intro {
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  position: absolute !important;
+  margin: 0 auto !important;
+}
+
+#footer {
+  height: 50px;
+  background-color: #f8f9f9;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 500px) {
+  #illustration {
+   display: none;
+  }
+    /* display: none !important; */
+}
