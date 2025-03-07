@@ -21,8 +21,30 @@ function fetchWeather(location) {
         .then(response => response.json())
         .then(data => {
             locationElement.textContent = data.name;
-            temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
+			temperatureElement.textContent = `${Math.round((data.main.temp * 9/5) + 32)}°F`;
             descriptionElement.textContent = data.weather[0].description;
+			const weatherCondition = data.weather[0].main.toLowerCase();
+			
+			// Map weather condition to image URL
+			let imageUrl;
+			switch (weatherCondition) {
+			  case 'clear':
+				imageUrl = 'url(../../Images/clear.webp)';
+				break;
+			  case 'clouds':
+				imageUrl = 'url(../../Images/cloudy.webp)';
+				break;
+			  case 'rain':
+				imageUrl = 'url(../../Images/rainy.webp)';
+				break;
+			  // Add more cases for other weather conditions as needed
+			  default:
+				imageUrl = 'url(../../Images/weatherCard.jpg)';
+			}
+
+			// Set background image dynamically
+			document.body.style.backgroundImage = imageUrl;
+						
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);

@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
     /* background-color: #f0f0f0; */
 
-  background-image: url('weather1.webp');
+  background-image: url('../../Images/weatherCard.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
